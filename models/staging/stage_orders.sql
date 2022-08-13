@@ -1,6 +1,6 @@
 select 
 --raw_orders
-orderid,orderdate,shipdate,shipmode,(ordersellingprice -ordercostprice) as profit,
+orderid,orderdate,shipdate,shipmode,ordersellingprice,ordercostprice,(ordersellingprice -ordercostprice) as profit,
 --raw_customers
 customername,segmnt,country,state,
 --raw_products
