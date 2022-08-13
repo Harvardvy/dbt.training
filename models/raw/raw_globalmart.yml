@@ -17,3 +17,7 @@ models:
                 - 'Same Day'
                 - 'Second Class'
                 - 'Strandard Class'
+      - name: orderid
+        tests:
+          - unique
+          - not_null
