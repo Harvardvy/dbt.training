@@ -11,3 +11,9 @@ models:
     columns:
       - name: shipmode
         tests:
+          - accepted_values:
+              values:
+                - 'First Class'
+                - 'Same Day'
+                - 'Second Class'
+                - 'Strandard Class'
