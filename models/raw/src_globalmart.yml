@@ -1,6 +1,11 @@
 version: 2
 
 sources:
-  -name: globalmart
-   database: CLOUD_RAW
-   schema: globalmart
+  - name: GLOBALMART
+    database: CLOUD_RAW
+    schema: GLOBALMART
+    tables:
+      - name: customer
+      - name: product
+      - name: orders
+  
