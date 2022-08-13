@@ -4,4 +4,6 @@
     )
 }}
 
-select * from cloud_raw.globalmart.customers
+select * from 
+--cloud_raw.globalmart.customers
+{{ source('GLOBALMART', 'customer') }}
