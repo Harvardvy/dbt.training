@@ -2,6 +2,7 @@ select
 --raw_orders
 orderid,orderdate,shipdate,shipmode,ordersellingprice,ordercostprice,(ordersellingprice -ordercostprice) as profit,
 --raw_customers
+c.customerid,
 customername,segmnt,country,state,
 --raw_products
 p.productid,category,productname,subcategory
