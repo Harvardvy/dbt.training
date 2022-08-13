@@ -5,6 +5,8 @@ orderid,orderdate,shipdate,shipmode,(ordersellingprice -ordercostprice) as profi
 customername,segmnt,country,state,
 --raw_products
 category,productname,subcategory
- from {{ ref('raw_orders') }}
- left join {{ ref('raw_customer') }}
- left join {{ ref('raw_product') }}
+ from {{ ref('raw_orders') }} as o
+ left join {{ ref('raw_customer') }} as c
+  on o.customerid=c.customerid
+ left join {{ ref('raw_product') }} as p
+  on o.productid=p.productid
