@@ -6,4 +6,4 @@
 
 select * from 
 --cloud_raw.globalmart.customers
-{{ source('GLOBALMART', 'customer') }}
+{{ source('GLOBALMART', 'customers') }}
