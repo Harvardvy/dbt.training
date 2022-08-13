@@ -4,7 +4,7 @@ orderid,orderdate,shipdate,shipmode,ordersellingprice,ordercostprice,(orderselli
 --raw_customers
 customername,segmnt,country,state,
 --raw_products
-category,productname,subcategory
+productid,category,productname,subcategory
  from {{ ref('raw_orders') }} as o
  left join {{ ref('raw_customer') }} as c
   on o.customerid=c.customerid
