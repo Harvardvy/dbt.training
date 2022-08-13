@@ -5,7 +5,7 @@ sources:
     database: CLOUD_RAW
     schema: GLOBALMART
     tables:
-      - name: customer
+      - name: customers
       - name: product
       - name: orders
   
