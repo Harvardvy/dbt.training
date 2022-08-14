@@ -5,4 +5,6 @@ models:
     description: one unique order per row
     columns: 
       - name: orderid
-        description: the primary key for stage orders
+        description: the primary key for stage_orders
+      - name: shipmode
+        description: '{{doc("shipmode")}}'
