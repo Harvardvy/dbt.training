@@ -1,3 +1,3 @@
-{% marco markup() %}
+{% macro markup() %}
 (ordersellingprice - ordercostprice)/ordercostprice
-{% end macro %}
+{% endmacro %}
