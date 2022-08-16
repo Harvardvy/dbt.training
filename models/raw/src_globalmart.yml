@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: GLOBALMART
+    description: a clone of the snowflake Database
+    database: CLOUD_RAW
+    schema: GLOBALMART
+    tables:
+      - name: customers
+      - name: product
+      - name: orders
+        description: raw order table
+        columns:
+          - name: orderid
+            description: primary key of orders table
+            tests:
+              - unique
+              - not_null
+
+
+
+        
+  
