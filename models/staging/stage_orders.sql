@@ -1,7 +1,7 @@
 select 
 --raw_orders
 orderid,orderdate,shipdate,shipmode,ordersellingprice,ordercostprice,(ordersellingprice -ordercostprice) as profit,
-{{ db_utils.surrogate_keys(['o.orderid','c.customerid','p.productid'])}} as sur_order,
+{{ dbt_utils.surrogate_keys(['o.orderid','c.customerid','p.productid'])}} as sur_order,
 --raw_customers
 c.customerid,
 customername,segmnt,country,state,
