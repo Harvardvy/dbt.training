@@ -6,8 +6,7 @@ orderid,orderdate,shipdate,shipmode,ordersellingprice,ordercostprice,(orderselli
 c.customerid,
 customername,segmnt,country,state,
 --raw_products
-p.productid,category,productname,subcategory--,
---{{ markup('ordersellingprice','ordercostprice') }} as markup
+p.productid,category,productname,subcategory
  from {{ ref('raw_orders') }} as o
  left join {{ ref('raw_customer') }} as c
   on o.customerid=c.customerid
